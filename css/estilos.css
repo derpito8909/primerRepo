@@ -1,0 +1,131 @@
+/* estilos base */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PremierSans-Regular";
+  src: url(../Fuentes/PremierLeagueW01-BoldItalic.woff2) format("woff2");
+}
+body {
+  background: #ff2882;
+  background: -moz-linear-gradient(left, #ff2882 0%, #b037e0 100%);
+  background: -webkit-linear-gradient(left, #ff2882 0%, #b037e0 100%);
+  background: linear-gradient(to right, #ff2882 0%, #b037e0 100%);
+  margin: 0px;
+  padding: 0px;
+  font-family: "PremierSans-Regular", Helvetica, sans-serif;
+}
+/* estilos del header */
+.imagen-centrada {
+  text-align: center;
+}
+.img-banner {
+  width: 600px;
+}
+/* estilos del menu */
+.icon {
+  padding: 10px;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon:active {
+  background-color: rgb(5, 47, 82);
+}
+.navbar {
+  background-color: steelblue;
+  position: sticky;
+  display: flex;
+}
+.navbar__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  background-color: rgb(42, 104, 155);
+  width: max-content;
+
+  overflow: hidden;
+  max-height: 0;
+  transition: 200ms;
+}
+.navbar__item:hover > .submenu {
+  max-height: 200px;
+}
+.navbar__link {
+  color: white;
+  text-decoration: none;
+
+  padding: 1em;
+  display: block;
+}
+.navbar__link:hover {
+  background-color: rgb(4, 47, 82);
+}
+.active {
+  font-weight: bold;
+  color: white;
+}
+.title {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.campo {
+  display: inline-flex;
+}
+.img-cancha {
+  height: 100%;
+  width: 52%;
+}
+.balon {
+  text-align: end;
+  position: absolute;
+  right: 0;
+  top: 331px;
+}
+.img-balon {
+  height: 45%;
+  width: 40%;
+}
+.text-shadow {
+  color: #ffffff;
+  text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc,
+    -15px 15px 0px #00bdbd;
+  color: #ffffff;
+  font-size: 5em;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+.img-var{
+    position: absolute;
+    right: 700px;
+    bottom: 140px;
+    display: none;
+
+}
+.img-sad{
+    width: 89px;
+    position: absolute;
+    right: 500px;
+    bottom: 150px;
+    display: none;
+}
+
+.main-footer {
+  position: relative;
+  top: 400px;
+  text-align: center;
+}
